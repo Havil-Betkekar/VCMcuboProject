@@ -1,0 +1,320 @@
+.img-class{
+    width: 100%;
+    height: auto;
+}
+.vcm-text-class {
+    background-color: #345ba5;
+    opacity: 0.6;
+    color: #fff;
+    width: 400px;
+    padding: 5px 20px 5px;
+    margin-top: 20px;
+    top: 400px;
+    left: 25px;
+    position: absolute;
+}
+button.button-class {
+    background: #fff;
+    color: #000;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 260px;
+    height: 30px;
+    font-weight: 700;
+}
+button.button-class a {
+    text-decoration: none;
+}
+.card-class {
+    background-color: #f7f4f4;
+    width: 180px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px 1px grey;
+    margin: 0 50px 0;
+}
+.separator-class {
+    height: 5px;
+    width: 100%;
+    border-radius: 18px;
+    background-color: #345ba5;
+}
+.service {
+    display: flex;
+    margin-top: 5px;
+    top: 35px;
+    position: relative;
+}
+.key-img-class img{
+    width: 40%;
+    
+}
+.key-img-class {
+    position: relative;
+    top: 30px;
+}
+.story-class{
+    width: 50%;
+    float: right;
+}
+.story-class h2 {
+    color: #345ba5;
+    font-size: 35px;
+    text-decoration: underline;
+}
+.manage-class{
+    color: #345ba5;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.manag-div {
+    width: 410px;
+    height: 180px;
+    background-color: #f7f4f4;
+    border-radius: 10px;
+    box-shadow: 6px 7px 1px #bdbdb1;
+    padding: 0 30px 0;
+}
+section.story-section {
+    background-color: #ebebeb;
+    padding: 30px 15px 80px;
+    height: 400px;
+}
+
+/*hamburger css*/
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  bottom: 820px;
+  left: 42px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #345ba5;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #345ba5;
+    opacity: 0.7;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 19px;
+  color: #fff;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+.read-div-class{
+  background-color: #345ba5;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  text-align: center;
+    color: #fff;
+    padding: 20px 0 20px;
+    margin-top: 30px;
+
+}
+
+.read-div-class h2 {
+    border-bottom: 2px solid #fff;
+}
+.read-div-class a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.read-div-class a:hover {
+    color: #000;
+
+
+}
+.testim-class {
+    background-color: #ebebeb;
+    padding: 30px 25px 35px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.testim-class h3 {
+    font-size: 35px;
+    color: #345ba5;
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+
+.testim-class p {
+    font-size: 25px;
+    color: #345ba5;
+}
+footer{
+    background-color: #345ba5;
+    color: #fff;
+    text-align: center;
+}
+.copyright-class p {
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+/*media query*/
+
+@media only screen and (max-width: 1024px) {
+    #menuToggle {
+        bottom: 603px;
+    }
+    #menu{
+        padding: 40px;
+    }
+    .card-class{
+        margin: 0 25px 0;
+    }
+    .key-img-class img {
+        width: 48%;
+    }
+    .story-class h2{
+        font-size: 30px;
+    }
+    .story-class p {
+        font-size: 14px;
+    }
+    .manag-div{
+        height: 145px;
+    }
+    section.story-section{
+        height: 365px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    #menuToggle {
+        bottom: 432px;
+        left: 42px;
+    }
+
+
+  }
